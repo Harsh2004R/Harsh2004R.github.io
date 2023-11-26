@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'font1';
+    src: url('./Fonts/above-font/AboveDemoRegular-lJMd.ttf') format('truetype');
+    /* Add additional font properties if needed */
+  }
+  @font-face {
+    font-family: 'font2';
+    src: url('./Fonts/family-font/Family-nR2ag.otf') format('opentype');
+    /* Add additional font properties if needed */
+  }
+  @font-face {
+    font-family: 'font3';
+    src: url('./Fonts/youth-touch-font/YouthTouchDemoRegular-4VwY.ttf') format('truetype');
+    /* Add additional font properties if needed */
+  }
+  @font-face {
+    font-family: 'font4';
+    src: url('./Fonts/skeina/Skeina.otf') format('opentype');
+    /* Add additional font properties if needed */
+  }
+  @font-face {
+    font-family: 'font5';
+    src: url('./Fonts/philosopher/Philosopher-Italic.ttf') format('truetype');
+    /* Add additional font properties if needed */
+  }
+  
+  
+  
