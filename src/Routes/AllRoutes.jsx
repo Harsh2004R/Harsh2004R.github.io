@@ -10,6 +10,7 @@ import Skills from '../Pages/Skills';
 import Message from '../Components/Message';
 import Projects from '../Pages/Projects';
 import Contact from "../Pages/Contact";
+import Footer from '../Pages/Footer';
 const AllRoutes = () => {
   return (
     <div>
@@ -25,6 +26,7 @@ const AllRoutes = () => {
         <Route path="/msg" element={<Message />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/footer" element={<Footer />}></Route>
 
 
       </Routes>
