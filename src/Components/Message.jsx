@@ -1,86 +1,48 @@
-// import React, { useState } from "react";
-// import { Box, Input, Button } from "@chakra-ui/react";
-
-// const Message = () => {
-//     const [message, setMessage] = useState("");
-//     const [typedMessage, setTypedMessage] = useState("");
-
-//     const handleMessageChange = (event) => {
-//         const newMessage = event.target.value;
-//         setTypedMessage(newMessage);
-//         setMessage(newMessage);
-//     };
-
-//     const handleSendClick = () => {
-//         // Implement your logic for sending the email here
-//         // For now, we'll just log the message to the console
-//         console.log("Sending email:", message);
-
-//         // Clear the message after sending
-//         setMessage("");
-//         setTypedMessage("");
-//     };
-
-//     return (
-
-
-
-//         <>
-
-//             <Box>
-//                 <Input
-//                     placeholder="Type your message..."
-//                     value={typedMessage}
-//                     onChange={handleMessageChange}
-//                 />
-//                 <Button onClick={handleSendClick} mt={2}>
-//                     Send
-//                 </Button>
-//                 {message && (
-//                     <Box mt={4}>
-//                         <strong>Your message:</strong> {message}
-//                     </Box>
-//                 )}
-//             </Box>
-
-
-
-
-
-
-
-//         </>
-//     );
-// };
-
-// export default Message;
-
-
 
 import React, { useState } from 'react';
-import { Box, Avatar, Text,Image, HStack, Input } from '@chakra-ui/react';
+import { Box, Avatar, Text, Image, HStack, Input } from '@chakra-ui/react';
 const Comments = ({ onClose }) => {
     const [message, setMessage] = useState("");
     const [typedMessage, setTypedMessage] = useState("");
+    const [subject, setSubject] = useState("");
 
     const handleMessageChange = (event) => {
         const newMessage = event.target.value;
         setTypedMessage(newMessage);
         setMessage(newMessage);
     };
+    const handleSubjectChange = (event) => {
+        const newSubject = event.target.value;
+        setSubject(newSubject);
+    };
 
     const handleSendClick = () => {
-        // Implement your logic for sending the email here
-        // For now, we'll just log the message to the console
-        console.log("Sending email:", message);
+        //  logic here for sending the email.
+        const email = 'harshsharmaktm03@gmail.com'; // Reciver's email address
+        const formattedSubject = encodeURIComponent(subject);
+        const formattedBody = encodeURIComponent(typedMessage);
+
 
         // Clear the message after sending
-        setMessage("");
+        const mailtoLink = `mailto:${email}?subject=${formattedSubject}&body=${formattedBody}`;
+
+
+        window.location.href = mailtoLink;
+
+        // Clear the message after sending
+        console.log("Sending email:", message);
         setTypedMessage("");
+        setMessage("");
+        setSubject("");
+
     };
     const handleClose = () => {
         onClose();
     }
+
+    
+
+
     return (
         <>
             <Box
@@ -154,8 +116,15 @@ const Comments = ({ onClose }) => {
                             <Box
                                 borderTop={"1px solid #444"}
                                 borderBottom={"1px solid #444"}
-                                w={{ base: "100%", md: "100%" }} h="84%" p={{base:"2",md:"5"}}>
-                                <strong style={{ fontFamily: "font5",fontSize:"12px", color: 'skyblue' }}>To harshsharmaktm03@gmail.com:</strong><Text style={{ fontFamily: "font5", color: '#fff' }}>{message}</Text>
+                                w={{ base: "100%", md: "100%" }} h="84%" p={{ base: "2", md: "5" }}>
+                                <strong style={{ fontFamily: "font5", fontSize: "12px", color: 'skyblue' }}>To: harshsharmaktm03@gmail.com</strong>
+                                <Box w="100%" h={"auto"} display={"flex"}>
+                                    <Text display={"flex"} alignItems={"center"} style={{ fontFamily: "font5", fontSize: "12px", color: '#FFFFFF' }}>
+                                        Subject:
+                                    </Text>
+                                    <Input value={subject} onChange={handleSubjectChange} ml={"1%"} fontSize={"14px"} fontFamily={"font5"} color={"#757575"} variant="unstyled" placeholder='Enter your subject' />
+                                </Box>
+                                <Text style={{ fontFamily: "font5", color: '#fff' }}>{message}</Text>
 
                             </Box>
 

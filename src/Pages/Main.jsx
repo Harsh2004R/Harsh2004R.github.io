@@ -5,6 +5,7 @@ import Profile from '../Components/Profile'
 import Navbar from '../Components/Navbar';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from "./Contact";
 
 const Main = () => {
 
@@ -63,6 +64,7 @@ const Main = () => {
 
         <Skills />
         <Projects/>
+        <Contact/>
 
 
 

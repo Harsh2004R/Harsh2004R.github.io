@@ -17,7 +17,10 @@ import Message from "../Components/Message";
 
 export default function Profile() {
     const [showCommentBox, setShowCommentBox] = useState(false);
-
+    const follow = () => {
+        let link = "https://www.linkedin.com/in/harsh-sharma-0545aa25b/";
+        window.location.href = link;
+    }
     const handleCommentClick = () => {
         setShowCommentBox(!showCommentBox);
     };
@@ -131,7 +134,9 @@ export default function Profile() {
                             }}
                             _focus={{
                                 bg: 'blue.500',
-                            }}>
+                            }}
+                            onClick={follow}
+                        >
                             Follow
                         </Button>
                     </Stack>

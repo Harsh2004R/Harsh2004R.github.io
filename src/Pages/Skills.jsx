@@ -1,28 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import { Box, Text, Image, Grid } from '@chakra-ui/react';
 const Skills = () => {
-    const [isVisible, setIsVisible] = useState(true);
-    const containerRef = useRef(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            const containerOffsetTop = containerRef.current.offsetTop;
-
-            // Adjust the threshold based on your requirements
-            const threshold = 200;
-
-            setIsVisible(scrollPosition + window.innerHeight > containerOffsetTop + threshold);
-        };
-
-        // Attach the scroll event listener
-        window.addEventListener('scroll', handleScroll);
-
-        // Cleanup the event listener on component unmount
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
     return (
         <>
             <Box w={{ base: "90%", md: "85%" }} m="auto" h="auto" >
@@ -111,7 +90,7 @@ const Skills = () => {
 
 
                 <Grid templateColumns={{ base: "repeat(4, 1fr)", md: "repeat(8, 1fr)" }} mb={{ base: "50px", md: "100px" }} w="100%" h="auto">
-                    <Box boxShadow="rgba(0, 0, 0, 0.3) 0px 19px 38px, rgb(117, 117, 117) 0px 7px 12px"  _hover={{ boxShadow: "rgba(3, 102, 214, 0.3) 0px 0px 0px 3px" }} mb="10px" borderRadius={{ base: "6px", md: "10px" }} w={{ base: "70px", md: "150px" }} h={{ base: "30px", md: "50px" }} >
+                    <Box boxShadow="rgba(0, 0, 0, 0.3) 0px 19px 38px, rgb(117, 117, 117) 0px 7px 12px" _hover={{ boxShadow: "rgba(3, 102, 214, 0.3) 0px 0px 0px 3px" }} mb="10px" borderRadius={{ base: "6px", md: "10px" }} w={{ base: "70px", md: "150px" }} h={{ base: "30px", md: "50px" }} >
                         <Image borderRadius={{ base: "6px", md: "10px" }} src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" w="100%" h="100%" alt="github" />&nbsp;&nbsp;
 
                     </Box>
@@ -161,7 +140,7 @@ const Skills = () => {
                     color="#fff" fontFamily={"font2"} fontSize={{ base: "2xl", md: "4xl" }} mb="10px" textAlign={{ base: "left", md: "left" }}>GitHub Stats Here:-</Text>
                 <Box
                     // border={"1px solid red"}
-                    ref={containerRef} style={{ opacity: isVisible ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}
+
                     w="100%" h="auto" display={"flex"} justifyContent={"space-between"} flexDirection={{ base: "column", md: "row" }}>
                     <Box w={{ base: "100%", md: "36%" }} h={{ base: "150px", md: "200px" }} >
                         <Image w="100%" h="100%" src="https://github-readme-stats.vercel.app/api?username=YourUsername&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40" alt="YourUsername" />

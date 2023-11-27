@@ -9,10 +9,11 @@ import Linkdin from '../Components/Linkdin';
 import Skills from '../Pages/Skills';
 import Message from '../Components/Message';
 import Projects from '../Pages/Projects';
+import Contact from "../Pages/Contact";
 const AllRoutes = () => {
   return (
     <div>
-      
+
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/globe" element={<Globe />}></Route>
@@ -23,8 +24,11 @@ const AllRoutes = () => {
         <Route path="/skills" element={<Skills />}></Route>
         <Route path="/msg" element={<Message />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+
+
       </Routes>
-    
+
     </div>
   )
 }
