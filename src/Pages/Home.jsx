@@ -6,13 +6,13 @@ import {
 } from '@chakra-ui/react';
 import useCustomColorMode from '../Hooks/UseCustomColorMode';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import Projects from '../Pages/Projects';
-import Skills from '../Pages/Skills';
-import Contact from '../Pages/Contact';
-import Footer from '../Pages/Footer';
-import Profile from './Profile';
-import Navbar from './Navbar';
-import Globe from './Globe';
+import Projects from './Projects';
+import Skills from './Skills';
+import Contact from './Contact';
+import Footer from './Footer';
+import Profile from '../Components/Profile';
+import Navbar from '../Components/Navbar';
+import Globe from '../Components/Globe';
 
 
 

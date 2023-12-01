@@ -9,7 +9,7 @@ import Message from '../Components/Message';
 import Projects from '../Pages/Projects';
 import Contact from "../Pages/Contact";
 import Footer from '../Pages/Footer';
-import Home from '../Components/Home';
+import Home from '../Pages/Home';
 const AllRoutes = () => {
   return (
     <div>
