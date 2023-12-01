@@ -10,14 +10,17 @@ import {
     HStack,
     Image
 } from '@chakra-ui/react';
-import { BsArrowUpRight, BsHeartFill, BsHeart } from 'react-icons/bs';
+import { BsArrowUpRight, BsHeartFill, BsHeart, BsCameraVideo } from 'react-icons/bs';
+import { Link } from "react-router-dom";
 
-export default function PostWithLike({ category, title, description, imageUrl, externalLink, githubPages }) {
+
+
+export default function PostWithLike({ category, title, description, imageUrl, externalLink, githubPages, liveLinks }) {
     const [liked, setLiked] = useState(false);
     const handleArrowClick = () => {
         window.open(externalLink, '_blank');
     };
-    const handleGithubPages = ()=>{
+    const handleGithubPages = () => {
         window.open(githubPages, '_blank');
     }
     return (
@@ -78,6 +81,7 @@ export default function PostWithLike({ category, title, description, imageUrl, e
                         </Text>
                         <BsArrowUpRight onClick={handleArrowClick} />
                         <Image onClick={handleGithubPages} w="25px" h="25px" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github" />
+                        <Link to={liveLinks}><BsCameraVideo color="blue" /></Link>
                     </Flex>
                     <Flex
                         p={4}

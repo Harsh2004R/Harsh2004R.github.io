@@ -39,6 +39,7 @@ function Projects() {
                         imageUrl="https://i.ibb.co/sWkHyc6/travels.png"
                         externalLink="https://travel-lovat-eight.vercel.app/"
                         githubPages="https://github.com/vaibhav7895/dapper-nation-4838"
+                        liveLinks="https://amazon.com"
                     />
                     <PostWithLike
                         category="React"
@@ -112,6 +113,7 @@ function Projects() {
                         imageUrl="https://i.ibb.co/j3k6Z8D/bucket.png"
                         externalLink="https://dream-quest-seven.vercel.app/"
                         githubPages="https://github.com/Harsh2004R/My_work"
+                        liveLinks="https://drive.google.com/file/d/1GHsjHRBH6jyMKxkBuENXX_6kXB2zc4-V/view?usp=sharing"
                     />
                     <PostWithLike
                         category="Vite + React"

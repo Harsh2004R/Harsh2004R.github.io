@@ -53,14 +53,14 @@ const Globe = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                background: "#1e1e1e",
+                background: "transparent",
                 flexDirection: "column",
                 // border: "1px solid yellow"
             }}>
                 <Text color="#fff" fontFamily={"font2"} fontSize={{ base: "2xl", md: "2xl" }} margin={"50px"} textAlign={{ base: "center", md: "justify" }}
                     style={{
                         textShadow: "3px 3px 0.2em #E91E63",
-                    
+
                     }}
                 >Journey so far in Web Development.</Text>
                 <span className="tagcloud" style={{
@@ -78,12 +78,14 @@ const Globe = () => {
                     height: "330px",
                     boxShadow: "#E91E63 10px 5px 20px -10px",
 
+
                 }}></span>
             </div>
             <style>
                 {`
                     .tagcloud--item {
-                        color: #00B0FF;
+                        color: #3184df;
+                        text-shadow: #FF0000 0px 5px 15px;
                         text-transform: uppercase;
                         /* border: 1px solid red; */
                     }
@@ -98,3 +100,4 @@ const Globe = () => {
 };
 
 export default Globe;
+// 00B0FF

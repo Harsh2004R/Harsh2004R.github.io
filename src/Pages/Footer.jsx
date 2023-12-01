@@ -15,7 +15,8 @@ import { BsDiscord } from 'react-icons/bs';
 
 const Footer = () => {
     return (
-        <Box p={{ base: 5, md: 8 }} w="100%" h="auto" marginInline="auto">
+        <Box p={{ base: 5, md: 8 }} w="100%" h="auto" bg={"#1e1e1e"} marginInline="auto">
+            <Divider my={2} bgColor="red"/>
             <Stack
                 spacing={{ base: 8, md: 0 }}
                 justifyContent="space-between"
@@ -23,7 +24,7 @@ const Footer = () => {
             >
                 <Box maxW="300px" display={"flex"}>
                     <Link href="https://github.com/Harsh2004R" color="#999" isExternal>
-                        
+
                     </Link>
                     <Text mt={2} style={{
                         background: 'linear-gradient(to right, #18FFFF, #E91E63)',
@@ -34,12 +35,12 @@ const Footer = () => {
                         Build fully functional accessible web applications faster than ever
                     </Text>
                     <Image
-                            w="50px"
-                            h="50px"
-                            borderRadius={"100%"}
-                            src="https://avatars.githubusercontent.com/u/115461808?v=4"
-                            alt="broken"
-                        />
+                        w="50px"
+                        h="50px"
+                        borderRadius={"100%"}
+                        src="https://avatars.githubusercontent.com/u/115461808?v=4"
+                        alt="broken"
+                    />
                 </Box>
                 <HStack
                     spacing={4}
@@ -51,8 +52,8 @@ const Footer = () => {
                             About
                         </Text>
                         <VStack spacing={2} alignItems="flex-start" color="gray.500">
-                            <CustomLink>Contrinute</CustomLink>
-                            <CustomLink>Media assets</CustomLink>
+
+
                             <CustomLink>Changelog</CustomLink>
                             <CustomLink>Releases</CustomLink>
                         </VStack>
@@ -62,8 +63,8 @@ const Footer = () => {
                             Community
                         </Text>
                         <VStack spacing={2} alignItems="flex-start" color="gray.500">
-                            <CustomLink>Chat on Discord</CustomLink>
-                            <CustomLink>Follow on Twitter</CustomLink>
+
+
                             <CustomLink>Follow on Github</CustomLink>
                             <CustomLink>Github discussions</CustomLink>
                         </VStack>
@@ -73,16 +74,16 @@ const Footer = () => {
                             Project
                         </Text>
                         <VStack spacing={2} alignItems="flex-start" color="gray.500">
-                            <CustomLink>TemplatesKart</CustomLink>
+
                             <CustomLink>Documentation</CustomLink>
                             <CustomLink>Github organization</CustomLink>
-                            <CustomLink>npm organization</CustomLink>
+
                         </VStack>
                     </VStack>
                 </HStack>
             </Stack>
 
-            <Divider my={4} />
+            <Divider my={2} />
 
             <Stack
                 direction={{ base: 'column', md: 'row' }}

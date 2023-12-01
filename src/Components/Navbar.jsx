@@ -1,13 +1,10 @@
 import React from 'react'
 import "./navbar.css"
-// import { Box } from "@chakra-ui/react"
-// import useCustomColorMode from '../Hooks/UseCustomColorMode';
 import SideNav from './SideNav.jsx';
-// import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 
 const Navbar = () => {
-    // const { colorMode, toggleColorMode, getColorPalette } = useCustomColorMode();
+
 
     return (
         <>
@@ -23,7 +20,7 @@ const Navbar = () => {
                             id="header__hamburger-icon"
 
                         >
-                             {/*  humber can be here if needed...? */}
+                            {/*  humber can be here if needed...? */}
                         </div>
                         <div class="header__links" id="header__nav-links">
                             <a href="#" class="header__links--active">About</a>
@@ -31,11 +28,7 @@ const Navbar = () => {
                             <a href="#">Projects</a>
                             <a href="#">Contact us</a>
                             <a href="#">Resume</a>
-                            {/* <Box  justifyContent={'right'} style={{ background: getColorPalette().background, color: getColorPalette().text }}>
-                                <Box onClick={toggleColorMode} w="30px" border={"0.5px solid #eee"} h="30px" display={"flex"} justifyContent={"center"} alignItems={"center"} borderRadius={"50%"} background={"transparent"}  >
-                                    {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-                                </Box>
-                            </Box> */}
+
                             <div class="header__social">
                             </div>
                         </div>
