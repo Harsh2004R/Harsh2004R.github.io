@@ -142,17 +142,33 @@ const Skills = () => {
                     // border={"1px solid red"}
 
                     w="100%" h="auto" display={"flex"} justifyContent={"space-between"} flexDirection={{ base: "column", md: "row" }}>
-                    <Box w={{ base: "100%", md: "36%" }} h={{ base: "150px", md: "200px" }} >
-                        <Image w="100%" h="100%" src="https://github-readme-stats.vercel.app/api?username=YourUsername&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40" alt="YourUsername" />
+                    <Box w={{ base: "100%", md: "36%" }} h={{ base: "150px", md: "30vh" }} >
+                        <Image w="100%" h="100%" src="https://github-readme-stats.vercel.app/api?username=Harsh2004R&theme=merko&&hide_border=true&hide=contribs,prs" />
                     </Box>
 
                     <Box w={{ base: "100%", md: "25%" }} h={{ base: "150px", md: "225px" }} >
                         <Image w="100%" h="100%" src="https://github-readme-stats.vercel.app/api/top-langs?username=Harsh2004R&show_icons=true&locale=en&layout=compact&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40" alt="Harsh2004" />
                     </Box>
-                    <Box w={{ base: "100%", md: "36%" }} h={{ base: "150px", md: "180px" }} >
-                        <Image w="100%" h="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=YourUsername&theme=dark" alt="YourUsername" />
+                    <Box
+
+                        backgroundImage={`url('https://github-readme-streak-stats.herokuapp.com/?user=harsh2004r&theme=merko&hide_border=true&type=png')`}
+                        backgroundSize="contain"
+                        backgroundRepeat="no-repeat"
+                        backgroundPosition="center"
+                        display={"flex"} justifyContent={"center"} alignItems={"center"} w={{ base: "100%", md: "36%" }} h={{ base: "150px", md: "30vh" }} >
 
                     </Box>
+                </Box>
+
+
+                <Box
+                    // border={"1px solid red"}
+                    w="100%" h="auto"
+                >
+                    <Image w="100%" h="100%" src="https://raw.githubusercontent.com/1999AZZAR/1999AZZAR/main/resources/img/grid-snake.svg" alt="snake" />
+                    <Text mt="20px" fontFamily={"font5"}> ✍️ Random Dev Quote </Text>
+                    <img  src='https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical' />
+
                 </Box>
 
 

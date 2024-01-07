@@ -93,7 +93,7 @@ const Footer = () => {
                 <Text color="#999" fontSize="md">
                     build by{' '}
                     <Link
-                        href="https://github.com/MA-Ahmad"
+                        href="https://github.com/harsh2004r"
                         textDecoration="underline"
                         _hover={{ textDecoration: 'underline' }}
                         isExternal

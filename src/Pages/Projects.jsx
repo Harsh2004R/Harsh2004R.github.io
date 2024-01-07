@@ -39,7 +39,7 @@ function Projects() {
                         imageUrl="https://i.ibb.co/sWkHyc6/travels.png"
                         externalLink="https://travel-lovat-eight.vercel.app/"
                         githubPages="https://github.com/vaibhav7895/dapper-nation-4838"
-                        liveLinks="https://amazon.com"
+                        liveLinks="https://drive.google.com/file/d/1Bkposvv4gKUFd-f_-J1Ap2s55XrtRRMq/view?usp=sharing"
                     />
                     <PostWithLike
                         category="React"
@@ -50,20 +50,22 @@ function Projects() {
                         githubPages="https://github.com/Harsh2004R/rambunctious-attraction-3750"
                     />
                     <PostWithLike
-                        category="HTML, css, Java scriot"
+                        category="HTML, css, Java script"
                         title="Carter's E-commerce Website Project"
                         description="A description of the e-commerce website project."
                         imageUrl="https://i.ibb.co/gJSYN2J/carters.png"
                         externalLink="https://fabulous-lily-b76f3b.netlify.app/"
                         githubPages="https://github.com/Ayush-kr-shanu/carters.com"
+                        liveLinks={"https://drive.google.com/file/d/1ABaTVEc-sgmq2X_R_dqaBdQVZU14uoeW/view?usp=sharing"}
                     />
                     <PostWithLike
-                        category="HTML, css, Java scriot"
+                        category="HTML, css, Java script"
                         title="J.Crew E-commerce Website Project"
                         description="A description of the e-commerce website project."
                         imageUrl="https://i.ibb.co/JngGPrM/azra.png"
                         externalLink="https://stunning-gecko-bef43b.netlify.app/"
                         githubPages="https://github.com/Harsh2004R/expensive-fog-3682"
+                        liveLinks="https://drive.google.com/file/d/1lV8LxmCbJ_bK18Mb2W7BMJJiT2rdZm2B/view?usp=sharing"
                     />
 
                     <Box
@@ -122,6 +124,15 @@ function Projects() {
                         imageUrl="https://i.ibb.co/cXjvJ4y/pagination.png"
                         externalLink="https://pagination-psi-seven.vercel.app/"
                         githubPages="https://github.com/Harsh2004R/sorting_filtering_pagination"
+                    />
+                     <PostWithLike
+                        category="Vite + React"
+                        title="GitHub_Repository_Viewer"
+                        description="In this project you can find github user with their repos details."
+                        imageUrl="https://i.ibb.co/9YGfrBV/github-user-name-repo-project.png"
+                        externalLink="https://pagination-psi-seven.vercel.app/"
+                        githubPages="https://git-hub-repository-viewer-7yvulw3f2-harsh2004r.vercel.app/"
+                        liveLinks="https://drive.google.com/file/d/1xF5d0wR5CpE5Z3dvisLiAT_AXBwOwzFs/view?usp=sharing"
                     />
 
                 </Grid>
